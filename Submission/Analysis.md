@@ -61,7 +61,7 @@ Network 2:
     3. 25
 - Loss: 3596.46
 - Accuracy: 0.46764
-- Summary: 
+- Summary: The loss is about half of Network 1, but accuracy was not improved. Network looks to be moderately better, but still not good.
 
 Network 3:
 - Layers: 4
@@ -72,10 +72,10 @@ Network 3:
     4. 15
 - Loss: 44524.74
 - Accuracy: 0.53236
-- Summary: 
+- Summary: Adding an extra layer improved the accuracy, but the loss drastically increased. 
 
 Network 4:
-- Layers: 5
+- Layers: 4
 - Nodes per layer:
     1. 250
     2. 150
@@ -83,7 +83,7 @@ Network 4:
     4. 50
 - Loss: 32148.51
 - Accuracy: 0.46764
-- Summary:
+- Summary: Despite the extra layer and additional neurons, this model looks to be the worst of the models.
 
 Keras-Tuner Results:
 - ![Results](Images/Keras_Tuner_Results.jpg)
@@ -102,8 +102,8 @@ Network 6:
     2. 250
     3. 150
     4. 100
-- Loss: 
-- Accuracy: 
+- Loss: 0.61276
+- Accuracy: 0.73096
 - Summary: Compared to the Networks from the original notebook, this perfomed much better. It is likely that the Status and Special Considerations columns added noise that negatively impacted the networks and that the original scaling also negatively impacted the networks.
 
 Network 7:
@@ -115,8 +115,8 @@ Network 7:
     2. 250
     3. 150
     4. 100
-- Loss: 
-- Accuracy: 
+- Loss: 0.63924
+- Accuracy: 0.62239
 - Summary: This model performed worse than Network 7. As a result, it's likely that the removed features Affiliation, Organization, and Use Case provided important associations for the networks.
 
 Network 8:
@@ -129,8 +129,8 @@ Network 8:
     2. 250
     3. 150
     4. 100
-- Loss: 0.55522
-- Accuracy: 0.74962
+- Loss: 0.55784
+- Accuracy: 0.74934
 - Summary: This model was the best performing model and the closest to the goal of 75% accuracy. As a result, it is likely that the Name feature provides important predictive power to determine if an organization is likely to meet their goal.
 
 
